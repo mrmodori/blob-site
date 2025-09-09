@@ -1,0 +1,149 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #1c1c1c;
+    color: #ff9800;
+    margin: 0;
+    padding: 0;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    padding-top: 6rem;
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    padding: 0 1rem;
+}
+
+/* --- Blob Icon --- */
+.blob-icon {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 999;
+    background-color: #2e2e2e;
+    border: 1px solid #444;
+    padding: 0.5rem;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00000088;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.blob-icon img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* --- Nav --- */
+nav {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 999;
+    background-color: #2e2e2e;
+    border: 1px solid #444;
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #000000aa;
+    font-size: 0.9rem;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0.5rem 0;
+}
+
+nav a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #fff;
+    text-shadow: 0 0 5px #ffcc00;
+}
+
+/* --- Headings --- */
+h1 {
+    font-size: 2.4rem;
+    color: #ff7800;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #ff9800;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.3rem;
+    text-align: center;
+}
+
+/* --- Laws box --- */
+.laws {
+    background-color: #262626;
+    padding: 1.2rem 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+.laws ul {
+    padding-left: 1rem;
+    margin: 0;
+    list-style-position: inside;
+}
+
+/* --- Quote --- */
+.quote {
+    color: #aaa;
+    font-style: italic;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* --- Footer --- */
+footer {
+    font-size: 0.85rem;
+    padding-top: 2rem;
+    margin-top: 3rem;
+    color: #888;
+    border-top: 1px solid #333;
+    text-align: center;
+}
+
+/* --- Responsive Fixes --- */
+@media (max-width: 600px) {
+    .blob-icon {
+        height: 80px;
+        width: 80px;
+    }
+
+    nav {
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}

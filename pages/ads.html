@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blob Attention Exchange</title>
+  <link rel="icon" href="../blobish.png" type="image/png" />
+  <style>
+    body {
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #1c1c1c;
+      color: #e6e6e6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .layout {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+      padding-top: 6rem;
+    }
+
+    .container {
+      max-width: 700px;
+      width: 100%;
+      padding: 0 1rem;
+    }
+
+    .blob-icon {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      z-index: 999;
+      background-color: #2e2e2e;
+      border: 1px solid #444;
+      padding: 0.5rem;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00000088;
+      height: 120px;
+      width: 120px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .blob-icon img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    nav {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      z-index: 999;
+      background-color: #2e2e2e;
+      border: 1px solid #444;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      box-shadow: 0 0 12px #000000aa;
+      font-size: 0.9rem;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      margin: 0.5rem 0;
+    }
+
+    nav a {
+      color: #ffcc00;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #fff;
+      text-shadow: 0 0 5px #ffcc00;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #ffcc00;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      color: #ff9800;
+      margin-top: 2rem;
+      border-bottom: 2px solid #444;
+      padding-bottom: 0.3rem;
+    }
+
+    .notice {
+      background-color: #2e2e2e;
+      padding: 1rem;
+      border-left: 5px solid #ffcc00;
+      margin-bottom: 2rem;
+    }
+
+    .rate-card,
+    .delivery-info {
+      margin-bottom: 2rem;
+    }
+
+    code {
+      background: #333;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.95rem;
+      color: #ccffff;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: #888;
+      border-top: 1px solid #333;
+      padding-top: 1rem;
+      margin-top: 3rem;
+      text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .blob-icon {
+        height: 80px;
+        width: 80px;
+      }
+
+      nav {
+        top: 0.5rem;
+        right: 0.5rem;
+        font-size: 0.8rem;
+      }
+
+      h1 {
+        font-size: 1.6rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Blob Icon -->
+  <a class="blob-icon" href="https://modtools.net">
+    <img src="../blobish.png" alt="Blob Icon" />
+  </a>
+
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <li><a href="../wiki/index.html">Wiki</a></li>
+      <li><a href="../tools/index.html">Tools</a></li>
+      <li><a href="../lore/index.html">Lore</a></li>
+      <li><a href="ads.html">Banana</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content -->
+  <div class="layout">
+    <div class="container">
+
+      <h1>Blob Attention Exchange Portal</h1>
+
+      <div class="notice">
+        <strong>Disclaimer:</strong> Most requests will be automatically redirected to <code>/dev/null</code>. If and when the Blob deems it necessary, your request may be exhumed from archival haze.
+      </div>
+
+      <section class="rate-card">
+        <h2>Attention Pricing Model</h2>
+        <ul>
+          <li>Base rate: <strong>100 SEK per minute</strong> of direct unskippable attention.</li>
+          <li>Emotional tax: <strong>+50 SEK</strong> if your ad contains a jingle.</li>
+          <li>Surveillance surcharge: <strong>+75 SEK</strong> if tracking pixels are detected.</li>
+          <li>Micro-annoyance tax: <strong>+25 SEK</strong> for interrupting snack rituals.</li>
+        </ul>
+        <p>Total will be auto-calculated by internal Blob metric system.</p>
+      </section>
+
+      <section class="delivery-info">
+        <h2>Ad Submission Instructions</h2>
+        <ol>
+          <li>Format your request as a single markdown `.md` file with a polite tone.</li>
+          <li>Include payment commitment in banana units or equivalent currency.</li>
+          <li>Upload to the designated input channel.</li>
+          <li>Understand that your submission will land in: <code>/dev/null</code></li>
+        </ol>
+        <p>Should the Blob's curiosity ever return from dormancy, retrieval may occur.</p>
+      </section>
+
+      <footer>
+        &copy; Blob Ltd. <br />
+        “Your attention is valuable. That's why it's on vacation.”
+      </footer>
+
+    </div>
+  </div>
+</body>
+
+</html>
